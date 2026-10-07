@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facture</title>
+    <link rel="stylesheet" href="facture.css">
+  </head>
+  <body>
+    <main>
+      <h1>Facture</h1>
+
+      <table>
+        <caption>Détail de la commande</caption>
+        <thead>
+          <tr>
+            <th scope="col">Categorie</th>
+            <th scope="col">Produit</th>
+            <th scope="col">Quantité</th>
+            <th scope="col">Prix unitaire</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" rowspan="2">Électronique</th>
+            <td>Souris sans fil</td>
+            <td>2</td>
+            <td>15&euro;</td>
+          </tr>
+          <tr>
+            <td>Clavier mécanique</td>
+            <td>1</td>
+            <td>45&euro;</td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="2">Papeterie</th>
+            <td>Cahier</td>
+            <td>3</td>
+            <td>4&euro;</td>
+          </tr>
+          <tr>
+            <td>Stylo</td>
+            <td>5</td>
+            <td>1&euro;</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">TOTAL GÉNÉRAL</td>
+            <td>92&euro;</td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+  </body>
+</html>

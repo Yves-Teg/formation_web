@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.a-propos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.a-propos .colonne {
+  flex: 1;
+  padding: 1rem;
+  background: bisque;
+  border-radius: 8px;
+}
+
+.colonne--texte h2,
+.colonne--liste h2 {
+  color: rgb(90, 95, 165);
+  margin-top: 0;
+}
+
+.colonne--image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.colonne--liste ul {
+  padding-left: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    .a-propos{
+        flex-direction: row;
+    }
+}

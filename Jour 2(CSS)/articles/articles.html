@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon blog personnel - Article</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- En-tete -->
+    <header>
+        <h1>Mon blog personnel</h1>
+        <p>Mon apprentissage du developpement web.</p>
+    </header>
+
+
+    <!-- Navigation principale -->
+    <nav aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenu principal -->
+    <main>
+
+        <article>
+
+            <header>
+                <h2 id="first-title">Les bases du HTML : ce que j'ai appris en une semaine</h2>
+                <p class="important">Publie le <time datetime="2026-09-15">15 septembre 2026</time></p>
+            </header>
+
+
+            <!-- Illustration de l'article -->
+            <figure>
+              <img src="banner.jpg" alt="Un ecran d'ordinateur affichant du code HTML colore dans l'editeur VS Code">
+              <figcaption>Mon environnement de travail pendant cette première semaine.</figcaption>
+            </figure>
+
+
+            <!-- Premiere partie -->
+            <section>
+                <h2>Introduction</h2>
+                <p>Cette semaine, j'ai découvert les fondamentaux du HTML: la structure d'une page et les principales balises permettant de construire un document web.</p>
+            </section>
+
+
+            <!-- Deuxieme partie -->
+            <section>
+                <h2>Ce qui m'a le plus marque</h2>
+                <p class="important">La notion de semantique a ete une vraie revelation. Comprendre la difference entre un simple div et une balise comme nav ou article change completement la façon de penser une page.</p>
+            </section>
+
+
+            <!-- Troisieme partie -->
+            <section>
+                <h2>Les difficultes rencontrees</h2>
+                <p>L'imbrication des listes et la gestion des ancres ont demande un peu de pratique avant de devenir naturelles.</p>
+            </section>
+
+
+            <!-- Commentaires -->
+            <section>
+                <h2>Commentaires</h2>
+
+                <form action="#" method="post">
+
+                    <div>
+                        <label for="comment-nom">Nom</label>
+                        <input type="text" id="comment-nom" name="comment_nom" required>
+                    </div>
+
+                    <div>
+                        <label for="comment-email">Email</label>
+                        <input type="email" id="comment-email" name="comment_email" required>
+                    </div>
+
+                    <div>
+                        <label for="comment-message">Commentaire</label>
+                        <textarea id="comment-message" name="comment_message" rows="8" cols="40" required></textarea>
+                    </div>
+
+                    <button type="submit">
+                        Publier le commentaire
+                    </button>
+
+                </form>
+
+            </section>
+
+        </article>
+
+    </main>
+
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2026 Mon blog</p>
+    </footer>
+
+</body>
+
+</html>

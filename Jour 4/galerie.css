@@ -1,0 +1,32 @@
+.galerie{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.figure-galerie {
+  padding: 10px;
+  border: 1px solid rgb(243, 229, 131);
+  border-radius: 6px;
+  background: white;
+}
+
+.figure-galerie img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.figure-galerie img:hover {
+  opacity: 1;
+}
+
+.figure-galerie figcaption {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 6px;
+}

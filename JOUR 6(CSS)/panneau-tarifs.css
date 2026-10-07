@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: verdana;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.tarifs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.offre {
+  flex: 1;
+  border: 1px solid whitesmoke;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  background: rgb(225, 224, 223);
+}
+
+.offre--pro {
+  border: 2px solid rgb(25, 26, 96);
+  transform: scale(1.03);
+}
+
+.offre__titre {
+  color: rgb(27, 12, 126);
+  margin-bottom: 1rem;
+}
+
+.offre__prix {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.offre__prix span {
+  font-size: 1rem;
+  font-weight: normal;
+  color: rgb(49, 28, 3)
+}
+
+.offre__liste {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.offre__liste li {
+  padding: 0.4rem;
+}
+
+.btn-vivant {
+  display: inline-block;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  background: purple;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.btn-vivant:hover,
+.btn-vivant:focus-visible {
+  background: rgb(80, 71, 71);
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .tarifs {
+    flex-direction: row;
+  }
+}

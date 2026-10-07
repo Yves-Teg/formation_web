@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 35px;
+}
+
+.conteneur {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    min-height: 150px;
+    background-color: white;
+    border: 2px solid rgb(9, 6, 0);
+}
+
+.boite {
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    background-color: purple;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* 1 — Ligne */
+
+.row {
+    flex-direction: row;
+}
+
+
+/* 2 — Colonne */
+
+.column {
+    flex-direction: column;
+}
+
+
+/* 3 — Space-between */
+
+.space-between {
+    justify-content: space-between;
+}
+
+
+/* 4 — Center */
+
+.center {
+    justify-content: center;
+}
+
+
+/* 5 — Align-items */
+
+.alignement {
+    align-items: center;
+}
+
+.petite {
+    height: 50px;
+}
+
+.moyenne {
+    height: 80px;
+}
+
+.grande {
+    height: 110px;
+}
+
+
+/* 6 — Wrap */
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.wrap .boite {
+    width: 300px;
+}

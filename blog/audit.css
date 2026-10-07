@@ -1,0 +1,4 @@
+input:not([name]), 
+textarea:not([name]), 
+select:not([name]) { outline: 3px solid red; 
+}

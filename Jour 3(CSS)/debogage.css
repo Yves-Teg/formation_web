@@ -1,0 +1,38 @@
+/* Styles de depart */
+body {
+    font-family: verdana;
+    color: black;
+    line-height: 1.6;
+}
+
+#message {
+    color: blue;
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* ERREUR 1 : mauvaise specificite */
+.message {
+    color: red;
+}
+
+/* ERREUR 2 : selecteur qui ne correspond a rien */
+ nav a{
+    color: green;
+}
+
+/* ERREUR 3 : point-virgule manquant */
+.second-message {
+    color: red
+    background-color: yellow;
+}
+
+/* ERREUR 4 : faute dans le nom de propriete */
+button {
+    colr: purple;
+}
+
+/* ERREUR 5 : valeur CSS invalide */
+.second-message {
+    font-size: 20 px;
+}

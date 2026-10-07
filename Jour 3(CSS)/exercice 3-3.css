@@ -1,0 +1,9 @@
+/* La regle bleue est conservee */
+#test8 {
+    color: blue;
+}
+
+/* !important est un aveu d'echec; augmenter la specifite est la solution */
+p#test8 {
+    color: red;
+}

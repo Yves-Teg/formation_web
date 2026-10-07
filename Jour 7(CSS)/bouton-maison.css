@@ -1,0 +1,18 @@
+/* bouton-maison.css, ton bouton du Jour 5 */
+.bouton-vivant {
+  display: inline-block;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  background: rgb(110, 39, 203);
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-vivant:hover,
+.btn-vivant:focus-visible {
+  background: rgb(110, 39, 203);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}

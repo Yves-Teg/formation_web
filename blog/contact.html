@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon blog personnel_Contact</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="audit.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!--En-tete-->
+    <header>
+
+      <h1>Mon blog personnel</h1>
+
+      <nav class="nav-blog" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>  
+
+    </header>
+
+    <!--Le contenu principal-->
+    <main>
+
+      <section>
+
+        <h2>Contact</h2>
+
+        <p>Vous pouvez me contacter via les moyens suivants :</p>
+
+        <form action="#" method="post">
+
+          <fieldset>
+
+            <legend>Vos informations</legend>
+            
+            <div>
+              <label for="nom">Nom</label>
+              <input type="text" id="nom" name="nom" placeholder="Teguia" required>
+            </div>
+            
+            <div>
+              <label for="Prenom">Prenom</label>
+              <input type="text" id="prenom" name="prenom" placeholder="Yves" required>
+            </div>
+            
+            <div>
+              <label for="email">Adresse-email</label>
+              <input type="email" id="email" name="email" placeholder="yvesteguia7@mail.com" required>
+            </div>
+            
+            <div>
+              <label for="telephone">Numero de Telephone</label>
+              <input type="tel" id="telephone" name="telephone" placeholder="+237655651422" required>
+            </div>
+            
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="8" cols="40" placeholder="Entrez votre texte ici..." required></textarea>
+            </div>
+          
+          </fieldset>
+          
+          <button type="submit">Envoyer le message</button>
+
+        </form>
+
+      </section>
+    
+    </main>
+
+    <!-- Pied de page -->
+     <footer>
+      <p>&copy; 2026 Mon blog</p>
+     </footer>
+
+  </body>
+
+</html>

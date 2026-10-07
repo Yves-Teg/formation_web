@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.zone-static {
+  background: wheat;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.boite {
+  width: 160px;
+  height: 80px;
+  color: darkblue;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
+
+/* 1. RELATIVE : reste dans le flux, mais se decale visuellement */
+.boite--relative {
+  background: teal;
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+
+/* 2. ABSOLUTE : sort du flux, se place par rapport a body (aucun ancetre positionne ici) */
+.boite--absolute {
+  background: lightcoral;
+  position: absolute;
+  top: 250px;
+  left: 400px;
+}
+
+/* 3. FIXED : collee a la fenetre, ignore le defilement */
+.boite--fixed {
+  background: rgb(145, 35, 213);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* 4. STICKY : normale jusqu'a toucher le haut, puis colle */
+.boite--sticky {
+  background: green;
+  position: sticky;
+  top: 0;
+}
+

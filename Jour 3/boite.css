@@ -1,0 +1,10 @@
+a [target="_blank"]::after { content: " ↗"; 
+}
+
+a [target="_blank"] {
+    color:chartreuse;
+}
+
+a[href^="mailto:"] {
+    color: blue;
+}

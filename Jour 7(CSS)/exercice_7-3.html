@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <!-- (a) Header du blog, reconstruit en Tailwind -->
+    <header class="flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold text-indigo-700">Mon blog personnel</h1>
+      <nav>
+        <ul class="flex gap-6 list-none m-0 p-0">
+          <li><a href="index.html" class="font-bold text-indigo-700 no-underline hover:text-indigo-900">Accueil</a></li>
+          <li><a href="mon-article.html" class="font-bold text-indigo-700 no-underline hover:text-indigo-900">Articles</a></li>
+          <li><a href="contact.html" class="font-bold text-indigo-700 no-underline hover:text-indigo-900">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- (b) Section 3 colonnes, en Tailwind -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6 p-8">
+      <div class="bg-gray-100 p-4 rounded-lg">
+        <h2 class="text-indigo-700 font-bold mb-2">Qui suis-je</h2>
+        <p>Je m'appelle Teguia, je me forme actuellement au developpement web en autodidacte.</p>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-lg">
+        <img src="Images/yves_Teguia.jpg" alt="Portrait de Teguia" class="w-full rounded-lg" />
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-lg">
+        <h2 class="text-indigo-700 font-bold mb-2">Competences</h2>
+        <ul class="pl-5">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript (bientot)</li>
+        </ul>
+
+      </div>
+    </section>
+
+  </body>
+
+</html>

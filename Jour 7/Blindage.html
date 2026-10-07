@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bilan de ma semaine de formation</title>
+  </head>
+  <body>
+    <main>
+      <h1>Bilan de ma semaine de formation</h1>
+
+      <form>
+        <!-- Note globale: maintenant obligatoire -->
+        <fieldset>
+          <legend>Note globale de la semaine</legend>
+          <label><input type="radio" name="note" value="1" required> 1</label>
+          <label><input type="radio" name="note" value="2"> 2</label>
+          <label><input type="radio" name="note" value="3"> 3</label>
+          <label><input type="radio" name="note" value="4"> 4</label>
+          <label><input type="radio" name="note" value="5"> 5</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Sujets preferes</legend>
+          <label><input type="checkbox" name="sujets" value="html"> HTML</label>
+          <label><input type="checkbox" name="sujets" value="css"> CSS</label>
+          <label><input type="checkbox" name="sujets" value="js"> JavaScript</label>
+        </fieldset>
+
+        <div>
+          <label for="jour-prefere">Jour prefere</label>
+          <select id="jour-prefere" name="jour-prefere">
+            <optgroup label="Jours 1-4">
+              <option value="jour1">Jour 1</option>
+              <option value="jour4">Jour 4</option>
+            </optgroup>
+            <optgroup label="Jours 5-7">
+              <option value="jour5">Jour 5</option>
+              <option value="jour7">Jour 7</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <!-- Range avec bornes resserrees -->
+        <div>
+          <label for="confiance">Niveau de confiance (0-10)</label>
+          <input type="range" id="confiance" name="confiance" min="0" max="10" step="1">
+        </div>
+
+        <!-- Nouveau champ email, obligatoire -->
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- Commentaire: obligatoire, 20 caracteres minimum -->
+        <div>
+          <label for="commentaire">Commentaire libre</label>
+          <textarea id="commentaire" name="commentaire" required minlength="20"></textarea>
+        </div>
+
+        <button type="submit">Envoyer mon bilan</button>
+      </form>
+    </main>
+  </body>
+</html>
