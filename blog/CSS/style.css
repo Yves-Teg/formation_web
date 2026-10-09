@@ -79,12 +79,12 @@ article section:first-of-type p:first-of-type::first-letter {
 }
 
 .badge{
-    top: -5px;
-    right: -5px;
+    top: -1px;
+    right: -1px;
     font-weight: var(--accent);
     border-radius: 50%;
     border: 1px solid whitesmoke;
-    padding: 0.5rem;
+    padding: 0.2rem;
     background: lightgreen;
     position: absolute;
 }
