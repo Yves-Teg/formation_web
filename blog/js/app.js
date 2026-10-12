@@ -1,46 +1,32 @@
-// EXERCICE 3.2: LA MENTION
+// EXERCICE 3.3: LE JUSTE PRIX DU TRANSPORT
 
-// 1- Declaration et bloc if / else if / else
-const grade = 14; 
+//  1 et 2 : Les regles et la logique avec operateurs
+const amount = 45000; // Montant du panier d'achat
+const isLocal = true; // true = en ville, false = hors ville
 
-if (grade < 10) {
-    console.log("Echec");
-} else if (grade >= 10 && grade <= 11) {
-    console.log("Passable");
-} else if (grade >= 12 && grade <= 13) {
-    console.log("Assez bien");
-} else if (grade >= 14 && grade <= 15) {
-    console.log("Bien"); 
+if (amount === 0) {
+    console.log("panier vide");
+} else if (amount >= 50000) {
+    console.log("Livraison gratuite");
+} else if (isLocal === true) {
+    console.log("Frais de livraison : 1 000 FCFA");
 } else {
-    console.log("Tres bien");
+    console.log("Frais de livraison : 2 500 FCFA");
 }
 
 
-// 2- Zone de test
-// Modifie la variable "grade" a la ligne 6 avec ces valeurs pour verifier la console :
-// Si grade = 9   -> Affiche : "Echec"
-// Si grade = 10  -> Affiche : "Passable"
-// Si grade = 13  -> Affiche : "Assez bien"
-// Si grade = 16  -> Affiche : "Tres bien"
+// 3- Test des 4 cas en Console
+// Cas 1 : amount = 0     et isLocal = true  -> Affiche : "panier vide"
+// Cas 2 : amount = 55000 et isLocal = false -> Affiche : "Livraison gratuite"
+// Cas 3 : amount = 30000 et isLocal = true  -> Affiche : "Frais de livraison : 1 000 FCFA"
+// Cas 4 : amount = 30000 et isLocal = false -> Affiche : "Frais de livraison : 2 500 FCFA"
 
 
-// 3- Gestion des garde-fou
-
-const gradeTest = 11.5; 
-
-// Test du piege 11.5
-
-if (grade < 0 || grade > 20) {
-    console.log("Note invalide"); // Garde fou pour bloquer -3
-} else if (grade < 10) {
-    console.log("Echec");
-} else if (grade < 12) { // Capte automatiquement 11.5 qui est entre 10 et 11.99
-    console.log("Passable");
-} else if (grade < 14) {
-    console.log("Assez bien");
-} else if (grade < 16) {
-    console.log("Bien");
-} else {
-    console.log("Tres bien");
-}
-
+// 4- Question Bonus en commentaire
+/* 
+   Pourquoi tester « panier vide » en premier ?
+   Parce que le chiffre 0 est inferieur a 50 000. Si on plaçait la verification 
+   du panier vide apres le test de livraison locale (isLocal === true), un panier a 
+   0 FCFA declencherait une livraison a 1 000 FCFA au lieu d'afficher "panier vide".
+   L'ordre du haut vers le bas evite ce bug de logique.
+*/
