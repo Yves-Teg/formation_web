@@ -30,3 +30,28 @@ for (let i = 0; i <= 20; i += 2) {
 Because, with method 1, the loop must eecute multiple times and perform rejections to find the odd
 number, whereas method 2 is shorted and involves no conditions.
 */
+
+// Exercice 4.2: Table du marche
+
+// 1- table de multiplication de 7 avec for
+for (let i = 1; i <= 10; i = i + 1) {
+  
+  // We simply calculate the result.
+  let resultat = 7 * i;
+  
+  // We join the pieces with plus signs at each turn.
+  console.log("7 x " + i + " = " + resultat);
+}
+
+// 2- avec while
+let i = 1;
+while (i <= 10) {
+   let resultat = 7 * i;
+   console.log("7 x " + i + " = " + resultat);  // We join our text segments and variables together.
+   i = i + 1;   // We add 1 to 'i' to move to the next iteration.
+}
+
+/* 
+3- pour ce probleme precis je prefere la boucle for car on connait exactement et a l'avance 
+le nobre de tour a effectuer.
+ */
