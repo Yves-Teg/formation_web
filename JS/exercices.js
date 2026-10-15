@@ -6,7 +6,7 @@ for (let i = 1; i <= 10; i++) {
 }
 
 // 2- compte a rebours de 10 a 1
-let i= 10 // The counter is initialized outside.
+let i= 10; // The counter is initialized outside.
 while ( i >= 1) { // The condition for continuation
     console.log(i); //Decrement at each iteration to avoid an infinite loop.
     i--;
@@ -19,7 +19,7 @@ for (let i = 0; i<= 20; i++) {
     if(i % 2 !== 0) { // If the number is odd, the remainder of the division will be non-zero
         continue;
     }
-    else(console.log(i));
+    console.log(i);
 }
 
 // 2eme facon: Un pas de 2.
@@ -55,3 +55,33 @@ while (i <= 10) {
 3- pour ce probleme precis je prefere la boucle for car on connait exactement et a l'avance 
 le nobre de tour a effectuer.
  */
+
+//Exercice 4.3: Ta playlist
+// 1-
+const playlist = ["Bolivienne", "Essaie encore", "A dix", "Me and my girlfriends", "Le prix de la reussite"];
+
+// 2- Affiche premier, dernier et nombre total.
+  // first
+console.log ("first title : " + playlist[0]);
+  // last
+let indexDernier = playlist.length - 1;
+console.log("last title : " + playlist[indexDernier]);
+  // Total number of elements
+console.log("Total number of elements : " + playlist.length);
+
+// 3- Ajoute un titre avec push, reaffiche le total.
+  // add title with push
+playlist.push("La madrina");
+  // New total number of elements
+ console.log("New total number of elements : " + playlist.length);
+ 
+ // 4- Un for...of qui affiche chaque titre
+for (const titre of playlist) { // The loop takes each piece one by one automatically
+  console.log(titre);
+}
+
+// 5-  La numerotation : un for classique qui affiche "1. [titre]", "2. [titre]"
+for (let i = 0; i < playlist.length; i = i + 1) {
+    let numeroAffiche = i + 1;  // // We calculate the display number for human-readable output (i + 1)
+    console.log(numeroAffiche + ". " + playlist[i]);  //We string the pieces together to create: "1. Bohemian Rhapsody"
+}
